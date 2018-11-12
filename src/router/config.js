@@ -5,7 +5,7 @@ import Singer from '../views/singer/singer'
 import SingerList from '../views/singer/singerList/singerList'
 import SingerInfo from '../views/singer/singerInfo/singerInfo'
 import PlistInfo from '../views/plist/plistInfo'
-
+import Login from '../login/login'
 // 导航区域的配置
 export let navConfig = [
   {
@@ -59,4 +59,13 @@ export let two = [
   }
 ]
 
-export default [...navConfig, ...two]
+export let login = [
+
+	{
+		path: '/login/login',
+		title:'test login',
+		component: Login
+	}
+]
+
+export default [...navConfig, ...two, ...login]

@@ -11,7 +11,7 @@ class SingerInfo extends Component {
           alt={info.singername} 
           src={info.imgurl.replace('{size}',400)} />
         <div style={{ marginTop: '-2rem' }}>
-          <SongList songList={data} ></SongList>
+          <SongList {...this.props} songList={data} ></SongList>
         </div>
       </div>
     )

@@ -16,6 +16,7 @@ class Singer extends Component {
               return (
                 <Item key={item.classid}
                 arrow="horizontal" onClick={() => { 
+                  console.log('aaa');
                   this.props.history.push(`/singer/list/${item.classid}`)
                 }}>
                   {item.classname}

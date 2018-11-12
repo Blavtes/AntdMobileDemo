@@ -16,6 +16,7 @@ class Nav extends Component {
     return (
       <div>
         <Tabs tabs={tabs}
+              isTabBarVertical={'bottom'}
           initialPage={initialPage}
           onChange = {(tab,index) => {
             console.log(tab, index)

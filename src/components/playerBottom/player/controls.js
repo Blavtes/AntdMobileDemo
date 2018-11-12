@@ -77,6 +77,7 @@ export default class Controls extends Component {
     this.setState({
       isMove: false
     })
+    
   }
   render() {
     return (

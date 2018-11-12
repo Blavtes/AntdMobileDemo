@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { List } from 'antd-mobile';
-import {connect} from 'react-redux'
-const Item = List.Item;
+import {connect} from 'react-redux';
 
+const Item = List.Item;
 
 class Songlist extends Component {
   static defaultProps = {
-    songList:[]
+    songList:[],
   }
   render() {
     return (
@@ -20,8 +20,9 @@ class Songlist extends Component {
                   extra={<i style={{ fontSize: '1rem' }}
                     className="iconfont icon-xiazai"></i>}
                   onClick={() => {
-                    this.props.dispatch({ type: 'updateHash', hash: item.hash })
-                    this.props.dispatch({ type: 'updateSongList', songList: this.props.songList})
+                     this.props.history.push(`/login/login`)
+                     // this.props.dispatch({ type: 'updateHash', hash: item.hash })
+                    // this.props.dispatch({ type: 'updateSongList', songList: this.props.songList})
                   }}
                 >{item.filename}</Item>
               )

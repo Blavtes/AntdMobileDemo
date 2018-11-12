@@ -13,6 +13,7 @@ import thunk from 'redux-thunk'
 import { createStore, applyMiddleware} from 'redux'
 import { Provider} from 'react-redux'
 import reducers from './reducers/reducers'
+import historys from './history';
 
 
 
@@ -26,7 +27,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <Router history={historys}>
           <div>
             <Header />
             <div className="content" style={{ paddingTop: '2rem'}}>

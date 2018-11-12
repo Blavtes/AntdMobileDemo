@@ -5,6 +5,11 @@ export default class CustomeCarousel extends Component {
     banner: []
   }
   render() {
+    
+    {this.props.banner.map(val => (
+      console.log(" ### val.id " + val.id + " val.imgurl " + val.imgurl)
+      ));
+    }
     return (
       <Carousel
         autoplay={false}

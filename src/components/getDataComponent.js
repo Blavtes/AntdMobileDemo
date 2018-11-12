@@ -48,8 +48,10 @@ export let getDataComponent = function (serverName,params={}) {
         return (
           
           this.state.loading 
-            ? <Icon type="loading"></Icon> 
-            : <Component2 data={this.state.data} {...this.props}/>
+            ? <Icon type="loading" style={{alignItems:'center',justifyContent
+
+            :'center'}}/>
+           : <Component2 data={this.state.data} {...this.props}/>
         )
       }
     }
