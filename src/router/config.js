@@ -10,7 +10,7 @@ import Login from '../login/login'
 export let navConfig = [
   {
     path: '/',
-    title: '新歌',
+    title: '首页',
     component: NewSong,
     info:{
       order:0
@@ -18,7 +18,7 @@ export let navConfig = [
   },
   {
     path: '/rank',
-    title: '排行',
+    title: '理财',
     component: Rank,
     info: {
       order: 1
@@ -26,7 +26,7 @@ export let navConfig = [
   },
   {
     path: '/plist',
-    title: '歌单',
+    title: '账户',
     component: Plist,
     info: {
       order: 1
@@ -34,7 +34,7 @@ export let navConfig = [
   },
   {
     path: '/singer',
-    title: '歌手',
+    title: '更多',
     component: Singer,
     info: {
       order: 2
@@ -44,16 +44,19 @@ export let navConfig = [
 export let two = [
   {
     path: '/singer/list/:id',
+      search:'/singer/list',
     title: '歌手',
     component: SingerList
   },
   {
     path: '/singer/info/:id',
+	  search:'/singer/info',
     title: '歌手信息',
     component: SingerInfo
   },
   {
     path: '/plist/list/:id',
+      search:'/plist/list',
     title: '歌单信息',
     component: PlistInfo
   }

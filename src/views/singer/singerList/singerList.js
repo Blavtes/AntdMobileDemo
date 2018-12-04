@@ -38,5 +38,6 @@ class SingerList extends Component {
 }
 connect()(组件) */
 export default getDataComponent('getSingerList',function(props){
+    console.log('######### props ' + props.match.params.id);
   return { classid: props.match.params.id }
 })(SingerList);

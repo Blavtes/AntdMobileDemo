@@ -3,19 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd-mobile": "^2.2.2",
+    "antd-mobile": "^2.2.6",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
-    "better-scroll": "^1.12.6",
+    "better-scroll": "^1.13.2",
     "classnames": "^2.2.6",
+    "fetch-jsonp": "^1.1.3",
+    "less": "^3.8.1",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.3.0",
     "react": "^16.4.1",
     "react-app-rewired": "^1.6.2",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
+    "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "react-scripts": "^1.1.4",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
@@ -24,11 +29,11 @@
     "eject": "react-scripts eject"
   },
   "proxy": {
-    "/kugou": {
-      "target": "http://m.kugou.com/",
+    "/api": {
+      "target": "http://218.17.205.130:18285/APP_SERVER/",
       "changeOrigin": true,
       "pathRewrite": {
-        "^/kugou": ""
+        "^/api": ""
       }
     }
   }

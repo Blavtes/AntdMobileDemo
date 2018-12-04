@@ -12,18 +12,18 @@ class Routes extends Component {
   }
   
   componentDidMount() {
-    this.scroll = new BScroll(this.warper.current,{
-      click: true,
-      scrollY: true
-    })
+    // this.scroll = new BScroll(this.warper.current,{
+    //   click: true,
+    //   scrollY: true
+    // })
   }
   componentDidUpdate(prevProps, prevState) {
-    this.scroll.refresh();
+    // this.scroll.refresh();
   }
   render() {
     return (
       <React.Fragment>
-        <div style={{ height: '90%' }} className='abc'  ref={this.warper}>
+        <div style={{ height: '100%' }} className='abc'  ref={this.warper}>
           <div>
             {
               config.map((item) => {

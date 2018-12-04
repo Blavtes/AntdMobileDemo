@@ -1,0 +1,71 @@
+@color: './color';
+
+.container {
+  flex: 1;
+  margin-top: 0px;
+  backgroundColor: color.grayWhite;
+}
+
+.indicator {
+  flex: 1;
+  justifyContent: center;
+  alignItems: center;
+  backgroundColor: color.white;
+}
+
+.title {
+  flexDirection: row;
+  alignItems: center;
+  height: 64px;
+  width: 100%;
+  backgroundColor: color.baseColor;
+
+  shadowOpacity: 1;
+  shadowRadius: 15;
+  shadowColor: color.whiteGray;
+
+  //elevation: 5;
+}
+
+.left_img {
+  width: 20px;
+  height: 20px;
+  resizeMode: center;
+  marginLeft: 10;
+}
+
+.txt {
+  flex: 1;
+  textAlign: center;
+  color: color.white;
+  fontSize: 17;
+}
+
+.title_right {
+  color: color.black;
+  fontSize: 14;
+  marginLeft: 10;
+}
+
+.img_right {
+  width: 20px;
+  height: 20px;
+  resizeMode: center;
+  marginLeft: 10;
+}
+
+.btn_right {
+  width: 60px;
+  height: 30px;
+  color: color.white;
+  // backgroundColor : color.primary,
+  borderRadius: 5;
+  right: 0;
+  top: 30px;
+  position: absolute;
+}
+
+.view_right {
+  flexDirection: row;
+  marginRight: 18;
+}

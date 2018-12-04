@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import servers, { cancelRequst } from '../server'
+import servers, { cancelRequst } from '../http'
 import {Icon} from 'antd-mobile'
 
 export let getDataComponent = function (serverName,params={}) {
@@ -18,7 +18,7 @@ export let getDataComponent = function (serverName,params={}) {
        
         let method = servers[serverName];
         if (!method){
-          throw new Error('请求的方法不存在，请检测传入的参数')
+          throw new Error('请求的方法不存在，请检测传入的参数 ' + serverName)
         }
         // 声明变量存一下参数params
         let p = params;
