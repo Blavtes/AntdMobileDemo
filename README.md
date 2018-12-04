@@ -1,28 +1,5 @@
 # ant-react-kugou-mobile
 
-> 一个音乐站
-
-## 启动项目
-
-- 克隆项目到本地
-
-> git clone git@github.com:WYseven/ant-react-kugou-mobile.git
-
-> cd ant-react-kugou-mobile
-
-- 使用命令启动项目：
-
-> npm start
-
-之后在浏览器打开 **http://localhost:8080/** 预览。
-
-
-## 数据来源
-参考音乐站为酷狗音乐：[http://m.kugou.com/](http://m.kugou.com/)
-数据来源为酷狗音乐站，访问的酷狗网站，在地址后面写上queryString为 **json=true** 即可拿到数据，例如新歌数据：
-> http://m.kugou.com?json=true
-
-点击访问[http://m.kugou.com?json=true](http://m.kugou.com?json=true)
 
 ## 设置代理
 但在本地开发环境直接访问酷狗接口会出现跨域访问题，所以需要在**package.json**中设置代理：
